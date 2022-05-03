@@ -6,6 +6,7 @@ import Alert from "./components/Alert";
 import { MainApp } from "./components/MainApp";
 import { AlertProvider } from "./contexts/AlertContext";
 import { AuthProvider } from "./contexts/AuthContext";
+import Add from "./pages/add";
 import Disciplines from "./pages/Disciplines";
 import Instructors from "./pages/Instructors";
 import SignIn from "./pages/SignIn";
@@ -34,6 +35,7 @@ function App() {
                   path="/app/pessoas-instrutoras"
                   element={<Instructors />}
                 />
+                <Route path="/app/adicionar" element={<Add />} />
               </Route>
             </Routes>
           </BrowserRouter>
